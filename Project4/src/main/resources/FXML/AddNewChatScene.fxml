@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewChatController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select Friends">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ListView fx:id="friendList" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="chatNameField" promptText="Enter Chat Name" />
+      <Button fx:id="createBtn" disable="true" mnemonicParsing="false" onAction="#createChat" prefWidth="2000.0" text="Create Group DM" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+   </padding>
+</VBox>
